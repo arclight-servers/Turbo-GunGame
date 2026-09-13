@@ -549,16 +549,13 @@ void Weapons_ApplyAttribs(int client)
 	char buffer1[12];
 	StringMapSnapshot snapshot = map.Snapshot();
 	int length = snapshot.Length;
-	int attribs = 0;
 	for(int i; i < length; i++)
 	{
 		snapshot.GetKey(i, buffer1, sizeof(buffer1));
 		if(map.GetValue(buffer1, value))
 		{
 			int index = StringToInt(buffer1);
-
-			if(Attributes_Set(client, index, value))
-				attribs++;
+			Attributes_Set(client, index, value);
 		}
 	}
 	
