@@ -68,5 +68,7 @@ void Native_OnHeadshotKill(int attacker, int victim)
 any Native_GetPlacements(Handle plugin, int numParams)
 {
 	ArrayList list = GetPlacementsArray();
-	return list;
+	ArrayList clone = view_as<ArrayList>(CloneHandle(list, plugin));
+	delete list;
+	return clone;
 }

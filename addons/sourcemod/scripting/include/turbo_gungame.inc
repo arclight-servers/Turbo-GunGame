@@ -50,7 +50,7 @@ forward void TGG_OnHeadshotKill(int attacker, int victim)
  * Gives a list of all participating players with their ranks, positions and winner status.
  * @note				The list is ordered by rank. Winners always come first.
  *
- * @return				ArrayList with the data.
+ * @return				ArrayList with the data. Must be freed with delete.
  */
 native ArrayList TGG_GetPlacements()
 
