@@ -4,13 +4,14 @@
 #include <tf2_stocks>
 #include <sdkhooks>
 #include <clientprefs>
+#include <dhooks>
 #undef AUTOLOAD_EXTENSIONS
 #tryinclude <tf2items>
 #define AUTOLOAD_EXTENSIONS
 #include <tf_econ_data>
 #include <turbo_gungame>
 
-//#include <tf2attributes>
+#include <tf2attributes>
 #include <morecolors>
 //#include <tf2utils>
 //#include <sourcescramble>
@@ -66,6 +67,7 @@ enum struct SpawnPointInfo
 #include "viewchanges.sp"
 #include "attributes.sp"
 #include "sdkcalls.sp"
+#include "dhooks.sp"
 #include "events.sp"
 #include "sdkhooks.sp"
 #include "convars.sp"
@@ -120,6 +122,7 @@ public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max
 public void OnPluginStart()
 {
 	Core_DoTickrateChanges();
+	DHook_Setup();
 	SDKCall_Setup();
 	Events_PluginStart();
 	SDKHook_PluginStart();

@@ -111,6 +111,15 @@
 				"linux64"		"@_ZN9CTFPlayer28GetChargeEffectBeingProvidedEv"
 				"windows"	"\x55\x8B\xEC\x51\x56\x8B\xF1\x8D\x86\xCC\x22\x00\x00"
 			}
+			"CTFPlayer::RegenThink"
+			{
+				//string RegenThink, small function
+				"library"	"server"
+				
+				"linux"		"@_ZN9CTFPlayer10RegenThinkEv"
+				"linux64"		"@_ZN9CTFPlayer10RegenThinkEv"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x7C\x56\x8B\xF1\x8B\x06"
+			}
 			"CBaseEntity::SetLocalOrigin" // String aBadSetlocalori,   Bad SetLocalOrigin(%f,%f,%f) on %s\n
 			{
 				"library"	"server"
@@ -223,7 +232,7 @@
 			{
 				// unique string xref "disguiseclass:%s"
 				"library"		"server"
-				"linux64"		"@_ZN9CTFPlayer21SpeakConceptIfAllowedEiPKcPcjP16IRecipientFilter"
+				"linux64"		"@_ZN9CTFPlayer21SpeakConceptIfAllowedEiPKcPcmP16IRecipientFilter"
 				"windows64"		"\x48\x89\x5C\x24\x10\x4C\x89\x4C\x24\x20\x4C\x89\x44\x24\x18\x55"
 				
 				"linux"			"@_ZN9CTFPlayer21SpeakConceptIfAllowedEiPKcPcjP16IRecipientFilter"
@@ -575,6 +584,13 @@
 						"type"	"int"
 					}
 				}
+			}
+			"CTFPlayer::RegenThink"
+			{
+				"signature"	"CTFPlayer::RegenThink"
+				"callconv"	"thiscall"
+				"return"	"void"
+				"this"		"entity"
 			}
 			"CTFParticleCannon::FireChargedShot"
             {
