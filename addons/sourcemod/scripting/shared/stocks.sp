@@ -617,8 +617,6 @@ stock void DHook_CreateDetour(GameData gamedata, const char[] name, DHookCallbac
 
 		if(postCallback!=INVALID_FUNCTION && !DHookEnableDetour(detour, true, postCallback))
 			LogError("[Gamedata] Failed to enable post detour: %s", name);
-
-		delete detour;
 	}
 	else
 	{
