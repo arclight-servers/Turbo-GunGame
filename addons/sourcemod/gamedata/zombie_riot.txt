@@ -911,9 +911,9 @@
 			}
 			"CTeamplayRules::FPlayerCanTakeDamage"
 			{
-				"windows"	"63"
-				"linux" 	"64"
-				"linux64" 	"64"
+				"windows"	"64"
+				"linux" 	"65"
+				"linux64" 	"65"
 			}
 			"CTFWeaponBase::FinishReload()"
 			{
