@@ -167,21 +167,17 @@ public void OnMapStart()
 	AddFileToDownloadsTable("sound/quake/standard/headshot.mp3");
 	AddFileToDownloadsTable("sound/turbo_gungame/levelup.mp3");
 	
-	AddFileToDownloadsTable("models/zombie_riot/weapons/custom_weaponry_1_52.dx80.vtx");
 	AddFileToDownloadsTable("models/zombie_riot/weapons/custom_weaponry_1_52.dx90.vtx");
 	AddFileToDownloadsTable("models/zombie_riot/weapons/custom_weaponry_1_52.mdl");
 	AddFileToDownloadsTable("models/zombie_riot/weapons/custom_weaponry_1_52.vvd");
 
-	AddFileToDownloadsTable("models/zombie_riot/weapons/ruina_models_1_2_2.dx80.vtx");
 	AddFileToDownloadsTable("models/zombie_riot/weapons/ruina_models_1_2_2.dx90.vtx");
 	AddFileToDownloadsTable("models/zombie_riot/weapons/ruina_models_1_2_2.mdl");
 	AddFileToDownloadsTable("models/zombie_riot/weapons/ruina_models_1_2_2.vvd");
 
-	AddFileToDownloadsTable("models/zombie_riot/weapons/ruina_models_2_5.dx80.vtx");
 	AddFileToDownloadsTable("models/zombie_riot/weapons/ruina_models_2_5.dx90.vtx");
 	AddFileToDownloadsTable("models/zombie_riot/weapons/ruina_models_2_5.mdl");
 	AddFileToDownloadsTable("models/zombie_riot/weapons/ruina_models_2_5.vvd");
-	AddFileToDownloadsTable("models/zombie_riot/weapons/soldier_hands/c_soldier_arms.dx80.vtx");
 	AddFileToDownloadsTable("models/zombie_riot/weapons/soldier_hands/c_soldier_arms.dx90.vtx");
 	AddFileToDownloadsTable("models/zombie_riot/weapons/soldier_hands/c_soldier_arms.mdl");
 	AddFileToDownloadsTable("models/zombie_riot/weapons/soldier_hands/c_soldier_arms.vvd");
